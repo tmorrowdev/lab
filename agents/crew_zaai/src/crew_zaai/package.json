@@ -1,0 +1,16 @@
+{
+  "name": "crew_zaai",
+  "version": "1.0.0",
+  "description": "CrewZaai project rewritten in Node.js",
+  "main": "main.js",
+  "scripts": {
+    "start": "node src/crew_zaai/main.js"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "axios": "^0.21.1",
+    "yaml": "^1.10.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
