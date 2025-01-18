@@ -4,35 +4,35 @@ Welcome to the CrewZaai Crew project, powered by [crewAI](https://crewai.com). T
 
 ## Installation
 
-Ensure you have Python >=3.10 <=3.13 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+Ensure you have Node.js installed on your system. This project uses [npm](https://www.npmjs.com/) for dependency management and package handling, offering a seamless setup and execution experience.
 
-First, if you haven't already, install uv:
+First, if you haven't already, install npm:
 
 ```bash
-pip install uv
+npm install
 ```
 
 Next, navigate to your project directory and install the dependencies:
 
-(Optional) Lock the dependencies and install them by using the CLI command:
 ```bash
-crewai install
+npm install
 ```
+
 ### Customizing
 
 **Add your `OPENAI_API_KEY` into the `.env` file**
 
 - Modify `src/crew_zaai/config/agents.yaml` to define your agents
 - Modify `src/crew_zaai/config/tasks.yaml` to define your tasks
-- Modify `src/crew_zaai/crew.py` to add your own logic, tools and specific args
-- Modify `src/crew_zaai/main.py` to add custom inputs for your agents and tasks
+- Modify `src/crew_zaai/crew.js` to add your own logic, tools and specific args
+- Modify `src/crew_zaai/main.js` to add custom inputs for your agents and tasks
 
 ## Running the Project
 
 To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
 
 ```bash
-$ crewai run
+$ node src/crew_zaai/main.js
 ```
 
 This command initializes the crew-zaai Crew, assembling the agents and assigning them tasks as defined in your configuration.
